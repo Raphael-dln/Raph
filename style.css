@@ -1,0 +1,359 @@
+/* 1. Le haut de la page*/
+
+head /* Caractéristiques principales*/
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #5e5d5d;
+}
+
+a /* Les liens hypertextes*/
+{
+  font-style: normal;
+  text-decoration: none;
+  color: #5e5d5d;
+}
+
+#conteneur1 /* Mise en place des boutons en haut à droite de l'écran*/
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.Gmail /*Apparence au survol des liens hypertextes*/
+{
+  margin-top: 22px;
+  margin-right: 10px;
+  color: #5e5d5d;
+}
+.Gmail:hover
+{
+  text-decoration: underline;
+}
+.Gmail:visited
+{
+  color: #5e5d5d;
+}
+
+.Images
+{
+  margin-top: 22px;
+  margin-right: 10px;
+  color: #5e5d5d;
+}
+.Images:hover
+{
+  text-decoration: underline;
+}
+.Images:visited
+{
+  color: #5e5d5d;
+}
+
+.Bouton
+{
+  margin-top: 22px;
+  margin-right: 8px;
+  height: 10px;
+  width: 30px;
+  padding: 1px;
+  background-color: white;
+}
+.Bouton:active
+{
+  border: 2px black;
+}
+.Connexion
+{
+  margin-top: 14px;
+  margin-right: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: #fff;
+  background: #3c7ae4;
+  text-decoration: none;
+  right: 10px;
+  padding: 6px 12px;
+  line-height: 24px;
+  cursor: default;
+  border-radius: 2px;
+}
+.Connexion:active
+{
+  background: blue;
+  text-decoration: none;
+}
+
+/* 2. Le milieu de la page*/
+
+body /* Caractéristiques principales*/
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #5e5d5d;
+  min-height: 100%;
+  margin: auto;
+}
+
+.Logo /* Le logo de Google*/
+{
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  padding-top: 8%;
+  padding-bottom: 1%;
+}
+
+.Navigation /* Mise en place de la barre centrale de recherche*/
+{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1%;
+}
+
+.Gauche /* La bordure de la barre de recherche*/
+{
+  height: 40px;
+  min-width: 550px;
+  border: 1px #5e5d5d solid;
+  background-color: white;
+  border-radius: 50px;
+}
+.Gauche:hover
+{
+  box-shadow: 2px 2px rgb(230, 230, 230);
+}
+
+.Milieu /* La div pour lancer les recherches*/
+{
+  height: 20px;
+  min-width: 500px;
+  margin-top: 15px;
+  margin-left: 20px;
+  border: none;
+  background-color: white;
+  position: absolute;
+}
+
+.Loupe /* La loupe à gauche dans la barre de recherche*/
+{
+  padding-left: 1.5%;
+  padding-top: 1.6%;
+  padding-bottom: 1%;
+}
+
+#conteneur2 /* Mise en place des boutons recherche google & j'ai de la chance*/
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.Recherche, .Chance
+{
+  margin-right: 10px;
+  margin-bottom: 25px;
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  background-color: rgb(241, 238, 238);
+  text-decoration: none;
+  right: 10px;
+  padding: 6px 12px;
+  line-height: 24px;
+  cursor: default;
+  border-radius: 2px;
+}
+
+.Chance:active
+{
+  background-color: gray;
+  padding:4px 2px 2px 4px;
+  text-decoration: none;
+}
+
+#Actualité /* Centrer le logo et le fil d'actualité*/
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.Gestes
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: blue;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+.Gestes:hover
+{
+  text-decoration: underline;
+}
+
+.dessous
+{
+    clear: both;
+}
+
+/* 3. Le pied de page*/
+
+footer /* Caractéristiques principales*/
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  margin-top: 215px;
+}
+
+#conteneur3 /* Mise en place France*/
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-end;
+  color: #5e5d5d;
+  background-color: rgb(241, 238, 238);
+  border: 1px #5e5d5d solid;
+  max-height: 35px;
+}
+
+.France
+{
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: 10px
+}
+
+#conteneur4 /* Mise en place des boutons en bas à gauche de l'écran*/
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+  max-width: 100%;
+  color: #5e5d5d;
+  background-color: rgb(241, 238, 238);
+  border: 1px #5e5d5d solid;
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+  max-height: 35px;
+  position: absolute;
+}
+
+.Pub
+{
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: 15px;
+  margin-left : 10px;
+}
+.Pub:hover
+{
+  text-decoration: underline;
+}
+
+.Entreprise
+{
+  margin-top: 8px; 
+  margin-bottom: 8px;
+  margin-right: 15px;
+}
+.Entreprise:hover
+{
+  text-decoration: underline;
+}
+
+.Propos
+{
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: 15px;
+}
+.Propos:hover
+{
+  text-decoration: underline;
+}
+
+.Comment
+{
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: 10px;
+}
+.Comment:hover
+{
+  text-decoration: underline;
+}
+
+#conteneur5 /* Mise en place des boutons en bas à droite de l'écran*/
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content: flex-start;
+  max-width: 100%;
+  color: #5e5d5d;
+  background-color: rgb(241, 238, 238);
+  border: 1px #5e5d5d solid;
+  border-top: none;
+  border-bottom: none;
+  max-height: 35px;
+}
+
+.Judiciaire
+{
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: 15px;
+}
+.Judiciaire:hover
+{
+  text-decoration: underline;
+}
+
+.Consommateurs
+{
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: 15px;
+}
+.Consommateurs:hover
+{
+  text-decoration: underline;
+}
+
+.Confidentialité
+{
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: 15px;
+}
+.Confidentialité:hover
+{
+  text-decoration: underline;
+}
+
+.Conditions
+{
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: 15px;
+}
+.Conditions:hover
+{
+  text-decoration: underline;
+}
+
+.Paramètres
+{
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: 15px;
+}
+.Paramètres:hover
+{
+  text-decoration: underline;
+}
